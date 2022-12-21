@@ -1,0 +1,924 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Regular.eot');
+    src: url('../fonts/RobotoSlab-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Regular.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Regular.woff') format('woff'),
+        url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.eot');
+    src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype'),
+        url('../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype'),
+        url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.eot');
+    src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Light.woff2') format('woff2'),
+        url('../fonts/Roboto-Light.woff') format('woff'),
+        url('../fonts/Roboto-Light.ttf') format('truetype'),
+        url('../fonts/Roboto-Light.svg#Roboto-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-BoldItalic.eot');
+    src: url('../fonts/Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Roboto-BoldItalic.woff') format('woff'),
+        url('../fonts/Roboto-BoldItalic.ttf') format('truetype'),
+        url('../fonts/Roboto-BoldItalic.svg#Roboto-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.eot');
+    src: url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto-Medium.woff') format('woff'),
+        url('../fonts/Roboto-Medium.ttf') format('truetype'),
+        url('../fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto Slab", sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 30px;
+    color: #1f222c;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+}
+
+h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+hr {
+    margin: 50px 0;
+    border: none;
+    border-top: 1px solid #dcdcde;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    margin-bottom: 9px;
+    padding: 10px 17px;
+    font-family: "Roboto", sans-serif;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+textarea {
+    height: 130px;
+    min-height: 130px;
+    resize: vertical;
+}
+
+option {
+    outline: none;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    margin-bottom: 9px;
+    padding: 12px 17px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    box-shadow: inset 0 0 2px rgba(62,106,255,0.55);
+    background-color: #fff;
+    border: 1px solid #3e6aff;
+}
+
+input[type="button"] {
+    cursor: pointer;
+}
+
+select {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+option:hover {
+    color: #fff;
+}
+
+table {
+    margin: 0;
+    width: 100%;
+}
+
+.main-wrapper {
+    margin: 80px auto 144px;
+    max-width: 990px;
+}
+
+.flex-l {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.flex-fr {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.simple-form {
+    width: 330px;
+}
+
+.perwa-colonka {
+    width: 330px;
+}
+
+.second-mail {
+    min-height: 131px;
+    height: 131px;
+    max-height: 303px;
+}
+
+.button-cook {
+    padding: 13px 0;
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Roboto";
+    border-radius: 3px;
+    background-color: #12d661;
+    border: none;
+}
+
+.button-cook:hover {
+    filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
+    background-color: #07be51;
+}
+
+.fixed-head {
+    position: fixed;
+    left: 62%;
+    z-index: 1;
+}
+
+.fixed-head h2 {
+    padding-right: 86px;
+}
+
+.plus {
+    position: relative;
+}
+
+.exit-fix {
+    position: absolute;
+    top: -25px;
+    right: -15px;
+    margin: 0;
+    font-size: 30px;
+    color: #cecdcd;
+    transform: rotate(-45deg);
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+
+.fixed {
+    position: fixed;
+    left: 62%;
+    padding: 27px 25px 21px;
+    max-width: 311px;
+    border-radius: 5px;
+    filter: drop-shadow(0px 5px 6px rgba(0,0,0,0.15));
+    background-color: #fafafa;
+    border: 1px solid #e6e6e6;
+    z-index: 1;
+}
+
+.fixed-flex {
+    margin: 0;
+}
+
+.fixed-flex > input {
+    width: 261px;
+}
+
+.fixed-flex > label {
+    padding-bottom: 9px;
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.fixed a {
+    padding: 14px 0 0;
+    font-size: 13px;
+    color: #3e6aff;
+    font-weight: 400;
+    font-family: "Roboto";
+    text-decoration: none;
+}
+
+.fixed a:hover {
+    text-decoration: underline;
+}
+
+.pass {
+    font-size: 13px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.fix-bott {
+    margin: 0;
+}
+
+.radio-flex {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.radio + label,
+.check + label {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.radio,
+.radio-last {
+    display: none;
+}
+
+.radio + label,
+.radio-last +label {
+    position: relative;
+    padding-left: 27px;
+    cursor: pointer;
+}
+
+.radio + label::before,
+.radio + label::after,
+.radio-last +label::before {
+    content: "";
+    position: absolute;
+}
+
+.radio + label::before {
+    left: 0;
+    top: -1px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.radio:checked + label::before {
+    border: 1px solid #244dd7;
+    background-color: #fff;
+}
+
+.radio:checked + label::after {
+    top: 1.8px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #244dd7;
+    background-color: #244dd7;
+}
+
+.radio-last + label::before {
+    left: 0;
+    top: -1px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+.radio1-flex {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.radio1 + label,
+.check + label {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.radio1 {
+    display: none;
+}
+
+.radio1 + label {
+    position: relative;
+    padding-left: 27px;
+    cursor: pointer;
+}
+
+.radio1 + label::before,
+.radio1 + label::after {
+    content: "";
+    position: absolute;
+}
+
+.radio1 + label::before {
+    left: 0;
+    top: -1px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.radio1:checked + label::before {
+    border: 1px solid #244dd7;
+    background-color: #fff;
+}
+
+.radio1:checked + label::after {
+    top: 2.8px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #244dd7;
+    background-color: #244dd7;
+}
+
+.radio1-last + label::before {
+    left: 0;
+    top: -1px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+.check,
+.check-dis,
+.man,
+.woman,
+.list {
+    display: none;
+}
+
+.check + label,
+.check-dis + label,
+.status + label {
+    position: relative;
+    padding-left: 27px;
+    cursor: pointer;
+}
+
+.check + label::before,
+.check + label::after,
+.check-dis + label::before,
+.check-dis + label::after {
+    content: "";
+    position: absolute;
+}
+
+.check + label::before {
+    top: -1px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.check:checked + label::before {
+    background-color: #fff;
+    border: 1px solid #244dd7;
+}
+
+.check:checked + label::after {
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 5px;
+    border-left: 2px solid #244dd7;
+    border-bottom: 2px solid #244dd7;
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+
+.check-dis + label,
+.radio-last + label {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.check-dis + label::before {
+    left: 0;
+    top: -1px;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+.data-block {
+    margin: 15px 0 0;
+    max-width: 474px;
+    height: 135px;
+    flex-direction: row;
+    column-gap: 25px;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+.header-form {
+    margin: 25px 0 25px 20px;
+}
+
+.check-form {
+    margin: 25px 20px 25px 0;
+}
+
+.data-block  p {
+    margin: 0;
+    padding-top: 4px;
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.header-form > p {
+    margin-bottom: 32px;
+}
+
+.row {
+    padding-bottom: 16px;
+    align-items: flex-end;
+    flex-direction: row;
+    column-gap: 25px;
+}
+
+.date {
+    padding: 14px 14px;
+    width: 149px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto";
+    color: #1f222c;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.status:checked + label::after {
+    top: 5px;
+    left: 5px;
+}
+
+.style-check {
+    margin: 68px 0;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: row;
+    column-gap: 300px;
+}
+
+.man-form {
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.man + label,
+.woman + label {
+    padding-left: 86px;
+    position: relative;
+    font-size: 16px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto";
+    cursor: pointer;
+}
+
+.man + label::before,
+.man + label::after,
+.woman + label::before,
+.woman + label::after {
+    content: "";
+    position: absolute;
+}
+
+.man + label::before {
+    top: -115%;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    background: url(../img/man.svg) no-repeat;
+}
+
+.man:checked + label::after {
+    top: -115%;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    color: #184cf8;
+    background: url(../img/man-color.svg) no-repeat;
+    transition: all 1s ease;
+}
+
+.man:checked + label {
+    color: #184cf8;
+}
+
+.woman + label::before {
+    top: -115%;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    background: url(../img/woman.svg) no-repeat;
+}
+
+.woman:checked + label {
+    color: #184cf8;
+}
+
+.woman:checked + label::after {
+    top: -115%;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    color: #184cf8;
+    background: url(../img/woman-color.svg) no-repeat;
+    transition: all 1s ease;
+}
+
+.style-list {
+    padding-left: 66px;
+}
+
+.style-list p {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.list + label {
+    position: relative;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.list + label::before,
+.list + label::after {
+    content: "";
+    position: absolute;
+}
+
+.list + label::before {
+    top: -1.4px;
+    left: -55px;
+    width: 45px;
+    height: 23.5px;
+    border-radius: 12px;
+    background-color: #cfcfd1;
+    transition: all .5s ease;
+}
+
+.list + label::after {
+    top: 0px;
+    left: -53px;
+    width: 21px;
+    height: 21px;
+    border-radius: 11px;
+    background-color: #fff;
+    transition: all .5s ease;
+}
+
+.list:checked + label::before {
+    top: -1.4px;
+    left: -55px;
+    width: 45px;
+    height: 23.5px;
+    border-radius: 12px;
+    background-color: #3e6aff;
+    transition: all .5s ease;
+}
+
+.list:checked + label::after {
+    top: 0px;
+    left: -33px;
+    width: 21px;
+    height: 21px;
+    border-radius: 11px;
+    background-color: #fff;
+    transition: all .5s ease;
+}
+
+.table-form-simple {
+    margin: 0;
+    width: 500px;
+}
+
+.table-form-simple p {
+    margin: 0;
+    padding-bottom: 25px;
+    font-size: 18px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.flex-table {
+    display: flex;
+    flex-direction: row;
+    column-gap: 80px;
+    row-gap: 37px;
+}
+
+.flex-table td {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.column {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.table td:first-child {
+    padding-top: 10px;
+}
+
+.gap-input {
+    width: 341px;
+    row-gap: 0;
+}
+
+.gap-input td {
+    width: 100%;
+}
+
+.label {
+    position: relative;
+    display: block;
+    background-color: #fff;
+}
+
+.label > select,
+.arrow-bot > select {
+    position: relative;
+    background-color: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.label::before,
+.label::after {
+    content: "";
+    position: absolute;
+    right: 21px;
+    top: 37%;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #1f222c;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.flex-radio-tb {
+    display: flex;
+    margin: 11px 0 20px;
+}
+
+.flex-radio-tb div {
+    padding-right: 23px;
+}
+
+.tb-radio + label::before {
+    top: 0;
+    left: 1px;
+    box-sizing: border-box;
+}
+
+.add-file {
+    display: none;
+}
+
+.add-file {
+    position: relative;
+    padding: 14px 0;
+}
+
+.add-file::before {
+    content: "";
+    position: absolute;
+}
+
+.add-file + label {
+    margin-bottom: 14px;
+    display: block;
+    width: 170px;
+    border-radius: 3px;
+    background-color: #3e6aff;
+    transition: all 1.5s ease;
+    cursor: pointer;
+}
+
+.add-file + label:hover {
+    filter: drop-shadow(0px 2px 2.5px rgba(15,40,126,0.35));
+    background-color: #010e3a;
+}
+
+.button-file label {
+    padding: 14px 0;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.table-form-last {
+    max-width: 700px;
+}
+
+.table-form-last p {
+    font-size: 18px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.table-form-last td {
+    padding-right: 7px;
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.bottom-hr {
+    margin: 28px 0;
+}
+
+.arrow-bot{
+   width: 230px;
+   position: relative;
+}
+
+.arrow-bot::before,
+.line-two::after {
+    content: "";
+    position: absolute;
+}
+
+.arrow-bot::before {
+    right: 15px;
+    top: 39%;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-color: #1f222c;
+}
+
+.arrow-bot:checked::before {
+    right: 15px;
+    top: 39%;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-color: #1f222c;
+}
+
+.line-two::after {
+    top: 22%;
+    right: 35px;
+    width: 2px;
+    height: 20px;
+    border-left: 1px solid #ccc;
+}
+
+.butt-before {
+    padding: 15px 23.5px;
+    font-size: 14px;
+    color: #6e6f77;
+    font-weight: 700;
+    font-family: "Roboto";
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #85868d;
+}
+
+.butt-before:hover {
+    color: #fff;
+    background-color: #85868d;
+}
+
+.bottom-next {
+    border: none;
+    padding: 15px 26px;
+}
