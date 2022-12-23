@@ -115,6 +115,10 @@ hr {
     border-top: 1px solid #dcdcde;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 input,
 textarea,
 select {
@@ -260,10 +264,13 @@ section.simple-form {
     font-size: 30px;
     color: #cecdcd;
     transform: rotate(-45deg);
-    transition: all 1s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
+.exit-fix:hover {
+    color: #07be51;
+}
 
 .fixed {
     position: fixed;
@@ -366,12 +373,12 @@ section.simple-form {
 }
 
 .radio:checked + label::after {
-    top: 1.8px;
-    left: 3px;
+    top: 3px;
+    left: 4px;
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    border: 2px solid #244dd7;
+    border: 1px solid #244dd7;
     background-color: #244dd7;
 }
 
@@ -418,8 +425,8 @@ section.simple-form {
 .radio1 + label::before {
     left: 0;
     top: -1px;
-    width: 14px;
-    height: 14px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -431,10 +438,10 @@ section.simple-form {
 }
 
 .radio1:checked + label::after {
-    top: 2.8px;
+    top: 3px;
     left: 4px;
-    width: 6px;
-    height: 6px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     border: 1px solid #244dd7;
     background-color: #244dd7;
@@ -655,16 +662,17 @@ section.simple-form {
 }
 
 .style-list p {
+    position: relative;
     margin: 0;
     margin-bottom: 30px;
 }
 
 .list + label {
-    position: relative;
     font-size: 14px;
     color: #1f222c;
     font-weight: 400;
     font-family: "Roboto";
+    padding-left: 55px;
 }
 
 .list + label::before,
@@ -674,10 +682,10 @@ section.simple-form {
 }
 
 .list + label::before {
-    top: -1.4px;
-    left: -55px;
+    top: -2px;
+    left: -3px;
     width: 45px;
-    height: 23.5px;
+    height: 25px;
     border-radius: 12px;
     background-color: #cfcfd1;
     transition: all .5s ease;
@@ -685,7 +693,7 @@ section.simple-form {
 
 .list + label::after {
     top: 0px;
-    left: -53px;
+    left: 0px;
     width: 21px;
     height: 21px;
     border-radius: 11px;
@@ -694,10 +702,10 @@ section.simple-form {
 }
 
 .list:checked + label::before {
-    top: -1.4px;
-    left: -55px;
+    top: -2px;
+    left: -3px;
     width: 45px;
-    height: 23.5px;
+    height: 25px;
     border-radius: 12px;
     background-color: #3e6aff;
     transition: all .5s ease;
@@ -705,7 +713,7 @@ section.simple-form {
 
 .list:checked + label::after {
     top: 0px;
-    left: -33px;
+    left: 19px;
     width: 21px;
     height: 21px;
     border-radius: 11px;
@@ -862,11 +870,12 @@ section.simple-form {
 }
 
 .bottom-hr {
+    max-width: 690px;
     margin: 28px 0;
 }
 
 .arrow-bot{
-   width: 230px;
+   width: 225px;
    position: relative;
 }
 
