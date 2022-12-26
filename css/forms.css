@@ -713,7 +713,7 @@ section.simple-form {
 
 .list:checked + label::after {
     top: 0px;
-    left: 19px;
+    left: 18px;
     width: 21px;
     height: 21px;
     border-radius: 11px;
