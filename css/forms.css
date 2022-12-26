@@ -832,7 +832,7 @@ section.simple-form {
     width: 170px;
     border-radius: 3px;
     background-color: #3e6aff;
-    transition: all 1.5s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
